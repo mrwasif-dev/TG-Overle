@@ -1,0 +1,24 @@
+{
+  "name": "Telegram Video Bot",
+  "description": "Adds overlay to videos",
+  "repository": "https://github.com/mrwasif-dev/TG-Overle",
+  "logo": "https://img.icons8.com/color/96/000000/video-editing.png",
+  "keywords": ["telegram", "bot", "video", "ffmpeg"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    }
+  }
+}
