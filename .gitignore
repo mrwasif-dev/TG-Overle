@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Heroku
+*.pid
+*.heroku/
+*.log
+
+# Downloads
+downloads/temp/*
+downloads/output/*
+!downloads/overlay/
+downloads/overlay/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System
+.DS_Store
+Thumbs.db
